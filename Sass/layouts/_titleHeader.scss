@@ -3,6 +3,8 @@
   overflow: hidden;
   position: relative;
   height: calc(100vh - 95px - 220px);
+  // min-height: calc(360px - 95px);
+  // min-height: calc(360px - 95px);
   width: 100%;
   margin-top: 95px;
   text-align: center;
@@ -87,3 +89,45 @@
     }
   }
 }
+
+@media (max-height: 640px) {
+  .titleHeader {
+    &__title {
+      margin-top: 18px;
+    }
+  }
+}
+
+@media (max-height: 580px) {
+  .titleHeader {
+    height: calc(100vh - 95px);
+    &__title {
+      margin-top: 77px;
+    }
+  }
+}
+
+@media (max-height: 460px) {
+  .titleHeader {
+    &__title {
+      margin-top: 40px;
+    }
+  }
+}
+
+@media (max-height: 380px) {
+  .titleHeader {
+    &__title {
+      margin-top: 15px;
+    }
+  }
+}
+
+// @media (max-height: 540px) {
+//   .titleHeader {
+//     height: calc(100vh - 95px);
+//     &__title {
+//       margin-top: 18px;
+//     }
+//   }
+// }

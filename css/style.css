@@ -392,6 +392,33 @@ li:first-of-type .stickyNav__navLink {
   }
 }
 
+@media (max-height: 640px) {
+  .titleHeader__title {
+    margin-top: 18px;
+  }
+}
+
+@media (max-height: 580px) {
+  .titleHeader {
+    height: calc(100vh - 95px);
+  }
+  .titleHeader__title {
+    margin-top: 77px;
+  }
+}
+
+@media (max-height: 460px) {
+  .titleHeader__title {
+    margin-top: 40px;
+  }
+}
+
+@media (max-height: 380px) {
+  .titleHeader__title {
+    margin-top: 15px;
+  }
+}
+
 .contactMe {
   padding-top: 39px;
   padding-bottom: 52px;
