@@ -1,0 +1,133 @@
+.titleHeader {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  height: calc(100vh - 95px - 220px);
+  // min-height: calc(360px - 95px);
+  // min-height: calc(360px - 95px);
+  width: 100%;
+  margin-top: 95px;
+  text-align: center;
+
+  &__coverLayer,
+  &__coverPhoto {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__coverPhoto {
+    z-index: 20;
+  }
+
+  &__coverLayer {
+    z-index: 30;
+    mix-blend-mode: lighten;
+  }
+
+  &__titleBox {
+    z-index: 40;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    font-size: 10px;
+  }
+
+  &__title {
+    margin-top: 77px;
+    text-align: center;
+    color: $color-brand--primary;
+    font-size: 10em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 117px;
+    letter-spacing: 0.02em;
+  }
+
+  &__subtitle {
+    margin-bottom: 28px;
+    text-align: center;
+    color: $color-font--on-brand-bgc;
+    font-size: 3.6em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0.02em;
+  }
+}
+
+@media (max-width: $mediaQ-tablet) {
+  .titleHeader {
+    &__titleBox {
+      font-size: 8px;
+    }
+  }
+}
+
+@media (max-width: $mediaQ-mobile-L) {
+  .titleHeader {
+    &__titleBox {
+      font-size: 6px;
+    }
+  }
+}
+@media (max-width: $mediaQ-mobile-M) {
+  .titleHeader {
+    &__titleBox {
+      font-size: 6px;
+    }
+  }
+}
+@media (max-width: $mediaQ-mobile-S) {
+  .titleHeader {
+    &__titleBox {
+      font-size: 5px;
+    }
+  }
+}
+
+@media (max-height: 640px) {
+  .titleHeader {
+    &__title {
+      margin-top: 18px;
+    }
+  }
+}
+
+@media (max-height: 580px) {
+  .titleHeader {
+    height: calc(100vh - 95px);
+    &__title {
+      margin-top: 77px;
+    }
+  }
+}
+
+@media (max-height: 460px) {
+  .titleHeader {
+    &__title {
+      margin-top: 40px;
+    }
+  }
+}
+
+@media (max-height: 380px) {
+  .titleHeader {
+    &__title {
+      margin-top: 15px;
+    }
+  }
+}
+
+// @media (max-height: 540px) {
+//   .titleHeader {
+//     height: calc(100vh - 95px);
+//     &__title {
+//       margin-top: 18px;
+//     }
+//   }
+// }

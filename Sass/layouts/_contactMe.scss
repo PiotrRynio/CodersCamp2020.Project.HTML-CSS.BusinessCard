@@ -1,0 +1,95 @@
+.contactMe {
+  padding-top: 39px;
+  padding-bottom: 52px;
+  background-color: #fff;
+  text-align: center;
+
+  &__title {
+    margin-bottom: 36px;
+    color: #222222;
+    text-align: center;
+    font-family: $font-family--primary;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 42px;
+    letter-spacing: 0.02em;
+  }
+
+  &__btnContainer {
+    display: inline-flex;
+    text-align: center;
+  }
+
+  &__btn {
+    margin: 0 40px;
+  }
+
+  &__btn--contact {
+  }
+
+  &__btn--cv {
+  }
+}
+
+@media (max-width: $mediaQ-tablet) {
+  .contactMe {
+    &__title {
+      font-size: 26px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .contactMe {
+    &__title {
+      font-size: 22px;
+    }
+
+    &__btn {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .contactMe {
+    &__title {
+      font-size: 20px;
+    }
+
+    &__btn {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+  }
+}
+
+@media (max-width: $mediaQ-mobile-L) {
+  .contactMe {
+    &__title {
+      font-size: 18px;
+    }
+
+    &__btn--contact {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: $mediaQ-mobile-M) {
+  .contactMe {
+    &__title {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: $mediaQ-mobile-S) {
+  .contactMe {
+    &__title {
+      font-size: 14px;
+    }
+  }
+}

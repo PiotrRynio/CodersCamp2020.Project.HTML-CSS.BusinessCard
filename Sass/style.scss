@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Ubuntu:wght@400;700&display=swap');
+
+@import 'reset'; // reset standardowy
+@import 'vars'; // ustawienie zmiennych
+@import 'main'; // opisanie głównych elementów
+
+@import 'mixins';
+
+@import 'components/btn';
+@import 'components/icons';
+@import 'components/socialmedia';
+
+@import 'layouts/stickyNav';
+@import 'layouts/titleHeader';
+@import 'layouts/contactMe';
+@import 'layouts/aboutMe';
+@import 'layouts/skills';
+@import 'layouts/portfolio';
+@import 'layouts/contactUs';
+@import 'layouts/footer';
+
+@import 'components/funnyAnimation/fBird';
+// @import 'components/funnyAnimation/module';
